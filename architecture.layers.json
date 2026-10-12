@@ -1,0 +1,9 @@
+{
+	"layers": [
+		{
+			"name": "addon-sdk-contracts",
+			"paths": ["packages/addon-sdk-contracts/"],
+			"mayImport": []
+		}
+	]
+}
