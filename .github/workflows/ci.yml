@@ -39,7 +39,7 @@ jobs:
             tar --exclude=node_modules --exclude=.git -czf "${artifact}" .
           fi
           echo "BUILD_ARTIFACT=${artifact}" >> "${GITHUB_ENV}"
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: "${{ github.event.repository.name }}-${{ github.sha }}"
           path: "${{ env.BUILD_ARTIFACT }}"
