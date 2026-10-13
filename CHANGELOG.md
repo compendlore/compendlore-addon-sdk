@@ -11,3 +11,5 @@ All notable changes to the Compendlore Addon SDK are recorded here.
 - Added independent build, validation, and compatibility foundations.
 - Added bilingual technical contracts for typed themes, variants, surfaces, and bounded extensions.
 - Added automated dependency maintenance for npm and GitHub Actions.
+- Added bilingual public contracts for localized resources, entities, navigation, sidebars, pages,
+  contribution ownership, dependencies, and lifecycle-compatible declarative content.

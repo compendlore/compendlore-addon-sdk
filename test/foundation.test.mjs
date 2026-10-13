@@ -16,3 +16,13 @@ test("publishes declarative theme contracts without arbitrary CSS hooks", async 
 	assert.match(source, /ThemeDefinition/);
 	assert.match(source, /ThemeExtensionDefinition/);
 });
+
+test("publishes the localized native-content contracts", async () => {
+	const source = await import("node:fs/promises").then(({ readFile }) =>
+		readFile(new URL("../packages/addon-sdk-contracts/build/index.d.ts", import.meta.url), "utf8"),
+	);
+	assert.match(source, /NativeContentContribution/);
+	assert.match(source, /LocalizedResourceDefinition/);
+	assert.match(source, /EntityTypeDefinition/);
+	assert.match(source, /MainNavigationItemDefinition/);
+});

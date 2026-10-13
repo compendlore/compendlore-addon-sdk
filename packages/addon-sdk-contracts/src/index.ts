@@ -18,3 +18,23 @@ export type {
 	ThemeTokenType,
 	ThemeVariantDefinition,
 } from "./themes.js";
+
+export type {
+	ContentContributionIdentity,
+	ContentOwnerKind,
+	EntityFieldDefinition,
+	EntityFieldFamily,
+	EntityInterfaceDefinition,
+	EntityRelationDefinition,
+	EntityTypeDefinition,
+	LocalizedResourceDefinition,
+	LocalizedValue,
+	MainNavigationItemDefinition,
+	NativeContentContribution,
+	NavigationLinkDefinition,
+	NavigationPosition,
+	PageDefinition,
+	SidebarDefinition,
+	SidebarItemDefinition,
+	VisibilityCondition,
+} from "./native-content.js";
