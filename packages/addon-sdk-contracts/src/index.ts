@@ -9,3 +9,12 @@ export const foundation: FoundationIdentity = Object.freeze({
 	description: "Point d'extraction futur des contrats publics du SDK",
 	status: "foundation",
 });
+
+export type {
+	ThemeDefinition,
+	ThemeExtensionDefinition,
+	ThemeSurface,
+	ThemeTokenDefinition,
+	ThemeTokenType,
+	ThemeVariantDefinition,
+} from "./themes.js";
